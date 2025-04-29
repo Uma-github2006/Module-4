@@ -1,34 +1,36 @@
 # Exp.No:17  
-## EXCEPTION HANDLING
+## Handling IndexError in Python using try-except
 
----
 
 ### AIM  
-To create a Python program that prompts the user for a list of grades separated by commas, splits the string into individual grades, and uses exception handling to inform the user if the values they entered cannot be converted to integers.
 
----
+To write a Python program that avoids IndexError by using try-except and displays a custom message when accessing an invalid index in a list.
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Read a string `input_str` from the user using `input()`.  
-3. Split the input string using commas (`,`) to create a list of grades.  
-4. Use a `try` block to attempt converting each item in the grades list to an integer and store the result in `l1`.  
-5. If the conversion is successful, print the list `l1` containing the integer values.  
-6. If an error occurs during conversion (for example, if the input is not a valid number), catch the exception and print an error message: `"The grades you entered were in an invalid format."` along with the original grades list.  
-7. Terminate the program.
-
----
+1. Start the program.
+2.Create a list with some elements.
+3.Use a try block to access an index of the list.
+4.If the index is valid, the element will be printed.
+5.If the index is out of range, the except block catches the IndexError.
+6.Display a custom message: "You're out of list range".
+7.End the program.
 
 ### PROGRAM
 
 ```
-Reg.No
-Name
-Add Your Code Here
+lst=[5, 10, 20]
+try:
+    print(lst[5])
+except:
+    print("You're out of list range")
 
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/b6c70cfc-a38d-4767-bf56-3b51313a53ba)
+
 
 ### RESULT
+Thus the Python program that avoids IndexError by using try-except is implemented and excecuted successfully.
+
