@@ -1,7 +1,6 @@
 # Exp.No:20  
 ## SEB - ARITHMETIC CALCULATION USING CLASS
 
----
 
 ### AIM  
 To write a Python program to perform addition and division operations using a class. The class should be named `Saveetha`, and the function names should be `setvalues` (to set `a` and `b` values), `add`, and `div`. The program should handle the following cases:  
@@ -10,7 +9,6 @@ To write a Python program to perform addition and division operations using a cl
 - `choice 0` → Exit  
 - For other choices, print 'Invalid choice'
 
----
 
 ### ALGORITHM
 
@@ -35,11 +33,34 @@ To write a Python program to perform addition and division operations using a cl
 ### PROGRAM
 
 ```
-
-
+class saveetha:
+    a=int(input())
+    b=int(input())
+    def setvalues(self):
+        self.a=a
+        self.b=b
+    def add(self):
+        return self.a+self.b
+    def div(self):
+        return self.a/self.b
+obj=saveetha()
+while True:
+    ch=int(input())
+    if(ch==1):
+        ans=obj.add()
+        print("Result: ",ans)
+    elif(ch==2):
+        ans1=obj.div()
+        print("Result: ",int(ans1))
+    elif(ch==0):
+        print("Exiting!")
+        break
 
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/5cc26fe8-82c4-4a85-bdc4-356836932f65)
+
 
 ### RESULT
+Thus the Python program to perform addition and division operation using class is implemented and executed successfully.
